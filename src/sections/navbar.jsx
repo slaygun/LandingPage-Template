@@ -16,7 +16,7 @@ function Navbar() {
         <div className='flex items-center'>
           <ul className="hidden md:flex items-center space-x-8">
               <li>
-                <a href="#" className="hover:--primary">Lorem</a>
+                <a href="#" className="hover:hover:text-blue-500">Lorem</a>
               </li>
               <li>
                 <a href="#" className="hover:text-blue-500">Ipsum</a>
