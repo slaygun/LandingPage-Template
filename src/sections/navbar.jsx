@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { AlignJustify } from 'lucide-react';
-import { Menu } from 'lucide-react'; // Import the Menu icon
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,14 +35,14 @@ const Navbar = () => {
         </div>
 
         {/* Menu icon for smaller devices */}
-        <button
+        <Button
           onClick={handleMenuToggle}
           aria-label="Open menu"
           aria-expanded={isMenuOpen}
           className="block md:hidden focus:outline-none"
         >
           <AlignJustify /> {/* Use the Menu icon from Lucide */}
-        </button>
+        </Button>
 
         {/* Navigation links for larger screens */}
         <ul className="hidden md:flex items-center space-x-8">
@@ -72,32 +71,36 @@ const Navbar = () => {
         </div>
 
         {/* Navigation menu for smaller devices */}
-        <ul
+        <div
           className={`
-          absolute top-full w-full bg-background shadow-md overflow-hidden
+          absolute left-0 top-full w-full bg-background shadow-md overflow-hidden md:hidden py-4
             ${isMenuOpen ? 'block' : 'hidden'}
           `}
         >
           {/* ... navigation links here */}
-          <li>
-            <a href="#" className="hover:text-blue-500 font-semibold py-2">Lorem</a>
-          </li>
-          <li>
-            <a href="#" className="hover:text-blue-500 font-semibold py-2">Ipsum</a>
-          </li>
-          <li>
-            <a href="#" className="hover:text-blue-500 font-semibold py-2">Blog</a>
-          </li>
-          <li>
-            <a href="#" className="hover:text-blue-500 font-semibold py-2">Contact</a>
-          </li>
-          <li>
-            <a href="#" className="hover:text-blue-500 font-semibold py-2">About</a>
-          </li>
-          {/* ... other links */}
-          <Button variant="outline">Sign In</Button>
-          <Button>Get Started</Button>
-        </ul>
+          <ul>
+            <li>
+              <a href="#" className="hover:text-primary font-semibold py-2">Lorem</a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-primary font-semibold py-2">Ipsum</a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-primary font-semibold py-2">Blog</a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-primary font-semibold py-2">Contact</a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-primary font-semibold py-2">About</a>
+            </li>
+            {/* ... other links */}
+            <div className="items-center py-4 space-x-4">
+              <Button variant="outline">Sign In</Button>
+              <Button>Get Started</Button>
+            </div>      
+          </ul>
+        </div>
       </div>
     </nav>
   );
