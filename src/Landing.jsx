@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function App() {
+function Landing() {
   return (
     <>
 
@@ -9,4 +9,4 @@ function App() {
   )
 }
 
-export default App
+export default Landing
