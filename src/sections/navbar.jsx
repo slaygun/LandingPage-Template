@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button"
 
-function Navbar() {
+const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); 
+
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > 0);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className='py-4 mx-auto'>
+    <nav
+      className={`
+        py-4 mx-auto sticky top-0
+        ${isScrolled ? 'backdrop-blur-xl shadow-black/70 shadow-md': 'bg-transparent'}
+      `}>
+        
       <div className='flex justify-evenly'>
 
         <div className='flex items-center'>
@@ -16,16 +30,19 @@ function Navbar() {
         <div className='flex items-center'>
           <ul className="hidden md:flex items-center space-x-8">
               <li>
-                <a href="#" className="hover:hover:text-blue-500">Lorem</a>
+                <a href="#" className="hover:text-blue-500">Lorem</a>
               </li>
               <li>
                 <a href="#" className="hover:text-blue-500">Ipsum</a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500">Contact Us</a>
+                <a href="#" className="hover:text-blue-500">About</a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500">About Us</a>
+                <a href="#" className="hover:text-blue-500">Blog</a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-blue-500">Contact</a>
               </li>
               {/* Add more links as needed */}
             </ul>          
