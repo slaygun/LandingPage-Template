@@ -26,7 +26,7 @@ const Navbar = () => {
         ${isScrolled ? 'backdrop-blur-xl shadow-md' : 'bg-transparent'}
       `}
     >
-      <div className="flex container justify-between">
+      <div className="flex container justify-between px-4">
         <div className="flex items-center">
           <img src="/assets/lyfelynk.svg" alt="LyfeLynk Logo" className="w-8 h-8 mr-2" />
           <a href="/" className="scroll-m-20 text-2xl lg:text-3xl font-semibold tracking-tight">
@@ -39,7 +39,7 @@ const Navbar = () => {
           onClick={handleMenuToggle}
           aria-label="Open menu"
           aria-expanded={isMenuOpen}
-          className="block md:hidden focus:outline-none"
+          className="md:hidden focus:outline-none"
         >
           <AlignJustify /> {/* Use the Menu icon from Lucide */}
         </Button>
@@ -74,32 +74,33 @@ const Navbar = () => {
         <div
           className={`
           absolute left-0 top-full w-full bg-background shadow-md overflow-hidden md:hidden py-4
+          text-center outline outline-primary
             ${isMenuOpen ? 'block' : 'hidden'}
           `}
         >
           {/* ... navigation links here */}
-          <ul>
+          <ul className='space-y-4 font-semibold'>
             <li>
-              <a href="#" className="hover:text-primary font-semibold py-2">Lorem</a>
             </li>
             <li>
-              <a href="#" className="hover:text-primary font-semibold py-2">Ipsum</a>
+              <a href="#" className="block hover:text-primary">Ipsum</a>
             </li>
             <li>
-              <a href="#" className="hover:text-primary font-semibold py-2">Blog</a>
+              <a href="#" className="block hover:text-primary">Blog</a>
             </li>
             <li>
-              <a href="#" className="hover:text-primary font-semibold py-2">Contact</a>
+              <a href="#" className="block hover:text-primary">Contact</a>
             </li>
             <li>
-              <a href="#" className="hover:text-primary font-semibold py-2">About</a>
+              <a href="#" className="block hover:text-primary">About</a>
             </li>
-            {/* ... other links */}
-            <div className="items-center py-4 space-x-4">
-              <Button variant="outline">Sign In</Button>
-              <Button>Get Started</Button>
-            </div>      
           </ul>
+            {/* ... other links */}
+          <div className="items-center py-4 space-x-4">
+            <Button variant="outline">Sign In</Button>
+            <Button>Get Started</Button>
+          </div>      
+          
         </div>
       </div>
     </nav>
