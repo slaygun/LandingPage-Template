@@ -3,7 +3,7 @@ import Navbar from './sections/navbar';
 
 function LandingPage() {
   return (
-    <div className='flex justify-center'>
+    <div>
       <Navbar/>
     </div>
   )

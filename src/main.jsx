@@ -10,7 +10,7 @@ const router = createBrowserRouter([
   {
   path: '/',
   element: <LandingPage />,
-  errorElement: <NotFoundPage />
+  //errorElement: <NotFoundPage />
   }
   
 ]);
