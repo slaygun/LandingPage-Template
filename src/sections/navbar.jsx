@@ -41,7 +41,7 @@ const Navbar = () => {
           aria-expanded={isMenuOpen}
           className="md:hidden focus:outline-none"
         >
-          <AlignJustify /> {/* Use the Menu icon from Lucide */}
+          <AlignJustify className='h-4 w-4'/> {/* Use the Menu icon from Lucide */}
         </Button>
 
         {/* Navigation links for larger screens */}
