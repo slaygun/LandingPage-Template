@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 function HeroSection() {
   return (
     
-    <section className="w-full py-12 md:py-24 lg:py-24">
+    <section className="w-full py-12">
       <div class="circlePosition w-full h-full bg-[#36a0d142] rounded-[100%] absolute -z-10 blur-[100px] flex justify-center items-center">
         <div class="circle w-[17rem] h-[17rem] bg-[#26b9fd42] rounded-[100%]" />
       </div>
@@ -19,7 +19,9 @@ function HeroSection() {
               Empower individuals and healthcare professionals with a secure and
               ethical approach to health data. By placing user privacy at the
               forefront, we can unlock the true potential of healthcare data for
-              personalized and impactful medical solutions.
+              personalized and impactful medical solutions.Join us in this mission
+              to empower individuals, enhance healthcare, and build a future where
+              privacy and progress go hand in hand.
             </p>
 
             <div className="flex items-left gap-6">

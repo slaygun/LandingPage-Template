@@ -1,9 +1,8 @@
 import React from 'react';
-import { Button } from "@/components/ui/button"
 
 function Features() {
   return (
-    <section className='py-12 md:py-24 lg:py-24'>
+    <section className='py-12'>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
@@ -65,29 +64,32 @@ function Features() {
 
       </div> 
 
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div className="flex flex-col items-center">
-        <h1 className="text-6xl font-bold mb-4 text-center">
-          Big Feature Display
-        </h1>
-        <p className="py-4 mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400 text-center">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <div className="w-full">
-          <img
-            alt="Astro Architecture"
-            className="w-full h-auto"
-            height="400"
-            src="assets/Dashboard.png"
-            style={{
-              aspectRatio: "1280/720",
-              objectFit: "cover",
-            }}
-            width="400"
-          />
+      <div class="circlePosition w-full h-full bg-[#36a0d142] rounded-[100%] absolute -z-10 blur-[100px] flex justify-center items-center">
+        <div class="circle w-[17rem] h-[17rem] bg-[#26b9fd42] rounded-[100%]" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="flex flex-col items-center">
+          <h1 className="text-6xl font-bold mb-4 text-center">
+            Big Feature Display
+          </h1>
+          <p className="py-4 mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400 text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <div className="w-full">
+            <img
+              alt="Astro Architecture"
+              className="w-full h-auto"
+              src="assets/Dashboard.png"
+              style={{
+                aspectRatio: "1280/720",
+                objectFit: "cover",
+              }}
+
+            />
+          </div>
         </div>
       </div>
-    </div>
 
     </section>
   )
