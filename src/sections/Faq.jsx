@@ -47,10 +47,9 @@ export default function Component() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
+      
       </div>
-      <div class="circlePosition w-full h-full bg-[#36a0d142] rounded-[100%] absolute -z-10 blur-[100px] flex justify-center items-center">
-        <div class="circle w-[17rem] h-[17rem] bg-[#26b9fd42] rounded-[100%]" />
-      </div>
+
     </section>
   )
 }
