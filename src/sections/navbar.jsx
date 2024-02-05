@@ -47,19 +47,19 @@ const Navbar = () => {
         {/* Navigation links for larger screens */}
         <ul className="hidden md:flex items-center space-x-8">
           <li>
-            <a href="#" className="hover:text-blue-500 font-semibold">Lorem</a>
+            <a href="#" className="hover:text-primary font-semibold">Lorem</a>
           </li>
           <li>
-            <a href="#" className="hover:text-blue-500 font-semibold">Ipsum</a>
+            <a href="#" className="hover:text-primary font-semibold">Ipsum</a>
           </li>
           <li>
-            <a href="#" className="hover:text-blue-500 font-semibold">Blog</a>
+            <a href="#" className="hover:text-primary font-semibold">Blog</a>
           </li>
           <li>
-            <a href="#" className="hover:text-blue-500 font-semibold">Contact</a>
+            <a href="#" className="hover:text-primary font-semibold">Contact</a>
           </li>
           <li>
-            <a href="#" className="hover:text-blue-500 font-semibold">About</a>
+            <a href="#" className="hover:text-primary font-semibold">About</a>
           </li>
           {/* ... other links */}
         </ul>
@@ -73,7 +73,7 @@ const Navbar = () => {
         {/* Navigation menu for smaller devices */}
         <div
           className={`
-          absolute left-0 top-full w-full bg-background shadow-md overflow-hidden md:hidden py-4
+          absolute left-0 top-full w-full bg-background/95 shadow-md overflow-hidden md:hidden py-4
           text-center outline outline-primary
             ${isMenuOpen ? 'block' : 'hidden'}
           `}
