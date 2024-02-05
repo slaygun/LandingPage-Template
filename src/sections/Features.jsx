@@ -1,12 +1,13 @@
 import React from 'react';
+import { Button } from "@/components/ui/button"
 
 function Features() {
   return (
-    <div>
-      <Navbar/>
-      <HeroSection/>
-    </div>
+    <section className="">
+
+    </section>
   )
-} 
+}
+
 
 export default Features

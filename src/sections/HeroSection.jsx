@@ -4,10 +4,9 @@ import { Button } from "@/components/ui/button"
 function HeroSection() {
   return (
     
-    <section className="w-full py-12 md:py-24 lg:py-32">
-      <div  className='circlePosition w-[590px] h-[400px]
-        bg-[#26b9fd42] rounded-[100%] absolute -z-10 top-[50%]
-          -translate-x-[-100%] translate-y-[-50%] blur-[100px]'>
+    <section className="w-full py-12 md:py-24 lg:py-24">
+      <div class="circlePosition w-full h-full bg-[#26b9fd42] rounded-[100%] absolute -z-10 blur-[100px] flex justify-center items-center">
+        <div class="circle w-[17rem] h-[17rem] bg-[#26b9fd42] rounded-[100%]" />
       </div>
       <div className="container px-4 md:px-6 ">
         <div className="grid gap-4  md:grid-cols-2 md:gap-16 flex items-center">
@@ -35,7 +34,7 @@ function HeroSection() {
             className="mx-auto"
             height="500"
             width="1200"
-            src="assets/heroimage.png"
+            src="assets/heropic.png"
           />
         </div>
       </div>
