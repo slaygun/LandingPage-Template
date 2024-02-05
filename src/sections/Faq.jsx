@@ -2,7 +2,7 @@ import { AccordionTrigger, AccordionContent, AccordionItem, Accordion } from "@/
 import { Badge } from "@/components/ui/badge"
 
 
-export default function Component() {
+function Faq() {
   return (
     <section className="py-12 w-full max-w-4xl p-6 mx-auto">
       <div className="text-center">
@@ -47,9 +47,11 @@ export default function Component() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-      
+
       </div>
 
     </section>
   )
 }
+
+export default Faq;
