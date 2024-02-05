@@ -5,7 +5,7 @@ function HeroSection() {
   return (
     
     <section className="w-full py-12 md:py-24 lg:py-24">
-      <div class="circlePosition w-full h-full bg-[#26b9fd42] rounded-[100%] absolute -z-10 blur-[100px] flex justify-center items-center">
+      <div class="circlePosition w-full h-full bg-[#36a0d142] rounded-[100%] absolute -z-10 blur-[100px] flex justify-center items-center">
         <div class="circle w-[17rem] h-[17rem] bg-[#26b9fd42] rounded-[100%]" />
       </div>
       <div className="container px-4 md:px-6 ">
