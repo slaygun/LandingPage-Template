@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav
       className={`
-        py-4 mx-auto sticky top-0
+        py-4 mx-auto sticky top-0 z-10
         ${isScrolled ? 'backdrop-blur-lg backdrop-filter bg-background/50 shadow-lg' : 'bg-transparent'}
       `}
     >
