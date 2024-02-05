@@ -9,7 +9,7 @@ function HeroSection() {
         <div class="circle w-[17rem] h-[17rem] bg-[#26b9fd42] rounded-[100%]" />
       </div>
       <div className="container px-4 md:px-6 ">
-        <div className="grid gap-4  md:grid-cols-2 md:gap-16 flex items-center">
+        <div className="gap-4 grid grid-cols-1 lg:grid-cols-2 md:gap-16 flex items-center">
           <div>
             <h1 className="text-6xl font-extrabold mb-4">
               Elevating Healthcare with Trust
