@@ -11,7 +11,7 @@ function HeroSection() {
       <div className="container px-4 md:px-6 ">
         <div className="grid gap-4  md:grid-cols-2 md:gap-16 flex items-center">
           <div>
-            <h1 className="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl">
+            <h1 className="text-6xl font-extrabold mb-4">
               Elevating Healthcare with Trust
             </h1>
             <p className="py-4 mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400
