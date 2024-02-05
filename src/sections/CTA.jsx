@@ -20,12 +20,12 @@ function CTA() {
           <div className='flex justify-center'>
             <img
               alt="f1"
-              height="400"
+              height="720"
               src="assets/ctapic.png"
               style={{
-                aspectRatio: "400/400",
+                aspectRatio: "1080/720",
               }}
-              width="400"
+              width="720"
             />
           </div>
         </div>
